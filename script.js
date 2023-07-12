@@ -1,14 +1,15 @@
 const heading = document.querySelector('#heading');
 
 const keyFrames = {
-    opacity: [0, 1],
-    translate: ['0 100px', '0 -50px'],
+    color: ['transparent', '#fff'],
+    backgroundPosition: ['100% 0', '0 0'],
+    rotate: ['x 360deg', 0],
 };
 
 const options = {
     duration: 2000,
-    direction: 'reverse',
-    easing: 'ease-out',
+    easing: 'ease',
+    iterations: Infinity,
 };
 
 heading.animate(keyFrames, options);
